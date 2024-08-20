@@ -77,7 +77,7 @@
                     <span class="nav-text">{{ __('main.information') }}</span>
                 </a>
                 <ul aria-expanded="false">
-                    <li><a href="{{ route('dashboard.information-list.index', ['pg' => 'sakip']) }}">{{ __('main.sakip') }}</a>
+                    {{-- <li><a href="{{ route('dashboard.information-list.index', ['pg' => 'sakip']) }}">{{ __('main.sakip') }}</a>
                     </li>
                     <li><a href="{{ route('dashboard.information-list.index', ['pg' => 'strategic_plan']) }}">{{ __('main.strategic_plan') }}</a>
                     </li>
@@ -86,7 +86,7 @@
                     <li><a href="{{ route('dashboard.information-list.index', ['pg' => 'key_performance_indicators']) }}">{{ __('main.key_performance_indicators') }}</a>
                     </li>
                     <li><a href="{{ route('dashboard.information-list.index', ['pg' => 'performance_agreement']) }}">{{ __('main.performance_agreement') }}</a>
-                    </li>
+                    </li> --}}
                     <li><a href="{{ route('dashboard.information-list.index', ['pg' => 'all_times']) }}">{{ __('main.all_times') }}</a>
                     </li>
                     <li><a href="{{ route('dashboard.information-list.index', ['pg' => 'periodically']) }}">{{ __('main.periodically') }}</a>
@@ -95,12 +95,12 @@
                     </li>
                 </ul>
             </li>
-            <li class="{{ Request::is('dashboard/agenda*') ? 'mm-active' : '' }}">
+            {{-- <li class="{{ Request::is('dashboard/agenda*') ? 'mm-active' : '' }}">
                 <a class="ai-icon" href="{{ route('dashboard.agenda.index') }}" aria-expanded="false">
                     <i class="fa fa-calendar-check-o fw-bold"></i>
                     <span class="nav-text">{{ __('main.agenda') }}</span>
                 </a>
-            </li>
+            </li> --}}
             <li class="{{ Request::is('dashboard/input*') ? 'mm-active' : '' }}">
                 <a class="ai-icon" href="{{ route('dashboard.input.index') }}" aria-expanded="false">
                     <i class="fa fa-commenting fw-bold"></i>

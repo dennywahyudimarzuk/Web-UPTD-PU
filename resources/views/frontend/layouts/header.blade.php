@@ -1,5 +1,5 @@
 <!-- Header top Start -->
-<div class="header-top d-none d-lg-block" style="background-color: #4FC0E8">
+<div class="header-top d-none d-lg-block" style="background-color: #203469">
     <div class="container">
 
         <!-- Header top Wrapper Start -->

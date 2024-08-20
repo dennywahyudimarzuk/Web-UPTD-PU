@@ -8,7 +8,7 @@
             <!-- Header Logo Start -->
             <div class="header-logo col-auto">
                 <a href="{{ route('beranda') }}">
-                    <img width="300" src="{{ asset('storage/identities/' . $identity_website->logo) }}" alt="Logo">
+                    <img width="400" src="{{ asset('storage/identities/' . $identity_website->logo) }}" alt="Logo">
                 </a>
             </div>
             <!-- Header Logo End -->

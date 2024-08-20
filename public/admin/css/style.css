@@ -3064,7 +3064,7 @@ textarea.form-control-lg {
 .dropstart .dropdown-toggle::before {
   display: inline-block;
   margin-right: 0.255em;
-  vertical-align: 0.255em;
+  vertical-align: 0.255em;  
   content: "";
   border-top: 0.3em solid transparent;
   border-right: 0.3em solid;

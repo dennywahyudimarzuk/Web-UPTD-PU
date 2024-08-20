@@ -59,8 +59,8 @@ class MenuSeeder extends Seeder
         ]);
 
         MenuChild::create([
-            'name' => 'Sejarah',
-            'url' => 'sejarah',
+            'name' => 'Tugas Pokok dan Fungsi',
+            'url' => 'tugaspokok-dan-fungsi',
             'menu_id' => 2,
             'page_id' => 1,
             'order' => 1,
@@ -84,8 +84,8 @@ class MenuSeeder extends Seeder
         ]);
 
         MenuChild::create([
-            'name' => 'Berita Disdukcapil',
-            'url' => 'berita-disdukcapil',
+            'name' => 'Berita ',
+            'url' => 'berita-uptdlabbk',
             'menu_id' => 3,
             'order' => 1,
             'user_id' => 1

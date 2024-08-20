@@ -1,6 +1,6 @@
 @extends('frontend.layouts.appcontent')
 
-@section('title', 'Detail Berita Sumsel')
+@section('title', 'Detail Berita')
 @section('content')
 
     @if ($pg == 'berita-sumsel')

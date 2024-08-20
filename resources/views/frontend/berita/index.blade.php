@@ -50,7 +50,7 @@
                         <div class="single-blog" data-aos="fade-up" data-aos-delay="200">
                             {{-- @foreach ($item->gambar as $newsimage) --}}
                             <div class="blog-image">
-                                <a href="{{ route('beritadetail', ['pg' => 'berita-disdukcapil', 'slug' => $item->slug]) }}"
+                                <a href="{{ route('beritadetail', ['pg' => 'berita-uptdlabbk', 'slug' => $item->slug]) }}"
                                     style=" height: 300px;
                                                 background-size: cover;
                                                 background-repeat: no-repeat;
@@ -69,9 +69,9 @@
                                     <li> <i class="fa fa-user"></i> Admin</li>
                                 </ul>
                                 <h3 class="title"><a
-                                        href="{{ route('beritadetail', ['pg' => 'berita-disdukcapil', 'slug' => $item->slug]) }}">{{ $item->title }}</a>
+                                        href="{{ route('beritadetail', ['pg' => 'berita-uptdlabbk', 'slug' => $item->slug]) }}">{{ $item->title }}</a>
                                 </h3>
-                                <a href="{{ route('beritadetail', ['pg' => 'berita-disdukcapil', 'slug' => $item->slug]) }}"
+                                <a href="{{ route('beritadetail', ['pg' => 'berita-uptdlabbk', 'slug' => $item->slug]) }}"
                                     class="more">+
                                     Selengkapnya</a>
                             </div>

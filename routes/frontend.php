@@ -9,7 +9,7 @@ Route::get('/', [HomeController::class, 'index'])->name('beranda');
 // Route::get('/visi-misi', [HomeController::class, 'visimisi'])->name('visi-misi');
 // Route::get('/struktur', [HomeController::class, 'struktur'])->name('struktur');
 
-Route::get('/agenda', [HomeController::class, 'agenda'])->name('agenda');
+Route::get('/resgistrasi', [HomeController::class, 'registrasi'])->name('registrasi');
 Route::get('/kontak-kami', [HomeController::class, 'kontakkami'])->name('kontak-kami');
 // Route::get('/{page}', [HomeController::class, 'page'])->name('page');
 
@@ -17,8 +17,9 @@ Route::get('/kegiatan', [HomeController::class, 'kegiatan'])->name('kegiatan');
 Route::get('/kegiatan-detail', [HomeController::class, 'kegiatandetail'])->name('kegiatan-detail');
 Route::get('/berita/{pg}', [HomeController::class, 'berita'])->name('berita');
 Route::get('/berita/{pg}/detail/{slug}', [HomeController::class, 'beritadetail'])->name('beritadetail');
-// Route::get('/berita/detail/{slug}', [HomeController::class, 'beritadetail'])->name('beritadetail');
-// Route::get('/berita-disdukcapil/detail/{slug}', [HomeController::class, 'disdukcapildetail'])->name('disdukcapildetail');
+
+Route::get('/pelayanan/alur-pelaksanaan-pengujian-laboratorium', [HomeController::class, 'pelaksanaan'])->name('pelaksanaan');
+Route::get('/pelayanan/sop-alur-pengujian-lapangan', [HomeController::class, 'sop'])->name('sop');
 
 Route::get('/informasi/{page}', [HomeController::class, 'informasi'])->name('informasi');
 // Route::get('/informasi-berkala', [HomeController::class, 'berkala'])->name('berkala');

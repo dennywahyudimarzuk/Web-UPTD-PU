@@ -26,7 +26,7 @@
                     <tbody>
                         @foreach ($informasi as $item)
                             <tr>
-                                <td class="py-3" style="color: #4FC0E8">
+                                <td class="py-3" style="color: #203469">
                                     <p>{{ \Carbon\Carbon::parse($item->created_at)->isoFormat('DD/MM/Y') }}
                                 </td>
                                 <td class="py-3">{{ $item->name }}</td>

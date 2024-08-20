@@ -28,7 +28,7 @@ class HomeController extends Controller
         view()->share('identity_website', $identity_website = IdentityWebsite::first());
         view()->share('social_media', $social_media = SocialMedia::get());
         view()->share('related_links', $related_links = RelatedLinks::get());
-        view()->share('berita_disdukcapil', $berita_disdukcapil = News::orderBy('publish_date', 'desc')->paginate(5));
+        view()->share('berita_uptdlabbk', $berita_uptdlabbk = News::orderBy('publish_date', 'desc')->paginate(5));
         try {
             $arrContextOptions = array(
                 "ssl" => array(
@@ -47,9 +47,9 @@ class HomeController extends Controller
     public function index()
     {
         $banner = Banner::where('active', '1')->latest()->get();
-        $berita_disdukcapil3 = News::orderBy('publish_date', 'desc')->paginate(3);
+        $berita_uptdlabbk3 = News::orderBy('publish_date', 'desc')->paginate(3);
         $foto = Gallery::where('category', 'image')->where('active', '1')->latest()->paginate(4);
-        return view('frontend.beranda', compact('banner','berita_disdukcapil3','foto'));
+        return view('frontend.beranda', compact('banner','berita_uptdlabbk3','foto'));
     }
 
     public function page(Request $request)
@@ -64,27 +64,6 @@ class HomeController extends Controller
             return view('errors.404');
         }
     }
-    // public function sejarah()
-    // {
-    //     return view('frontend.profil.sejarah');
-    // }
-    // public function visimisi()
-    // {
-    //     return view('frontend.profil.visimisi');
-    // }
-    // public function struktur()
-    // {
-    //     return view('frontend.profil.struktur');
-    // }
-
-    // public function kegiatan()
-    // {
-    //     return view('frontend.berita.kegiatan');
-    // }
-    // public function kegiatandetail()
-    // {
-    //     return view('frontend.berita.kegiatandetail');
-    // }
 
     public function berita(Request $request)
     {
@@ -106,7 +85,7 @@ class HomeController extends Controller
             } catch (\Throwable $th) {
                 $berita['data'] = [];
             }
-        }elseif($pg == 'berita-disdukcapil'){
+        }elseif($pg == 'berita-uptdlabbk'){
             $berita = News::orderBy('publish_date', 'desc')->paginate(15);
         }else{
             return view('errors.404');
@@ -134,7 +113,7 @@ class HomeController extends Controller
             if (isset($berita->gambar)){
                 $gambar = preg_split('/[,]/', $berita->gambar, -1, PREG_SPLIT_NO_EMPTY);
             }
-        }elseif($pg == 'berita-disdukcapil'){
+        }elseif($pg == 'berita-uptdlabbk'){
             $berita = News::where('slug',$request->slug)->first();
             if (isset($berita->gambar)){
                 $gambar = $berita->gambar;
@@ -181,18 +160,15 @@ class HomeController extends Controller
         }
         return view('frontend.informasi.index', compact('data', 'informasi', 'linkfile'));
     }
-    // public function setiapsaat()
-    // {
-    //     return view('frontend.informasi.setiapsaat');
-    // }
-    // public function berkala()
-    // {
-    //     return view('frontend.informasi.berkala');
-    // }
-    // public function sertamerta()
-    // {
-    //     return view('frontend.informasi.sertamerta');
-    // }
+
+    public function pelaksanaan()
+    {
+        return view('frontend.pelayanan.pelaksanaan');
+    }
+    public function sop()
+    {
+        return view('frontend.pelayanan.sop');
+    }
 
     public function foto()
     {
@@ -204,10 +180,10 @@ class HomeController extends Controller
         $video = Gallery::where('category', 'video')->latest()->paginate(15);
         return view('frontend.galeri.video', compact('video'));
     }
-    public function agenda()
+    public function registrasi()
     {
-        $data = Agenda::orderBy('activity_time', 'desc')->paginate(10);
-        return view('frontend.agenda', compact('data'));
+        // $data = Agenda::orderBy('activity_time', 'desc')->paginate(10);
+        return view('frontend.registrasi');
     }
     public function kontakkami()
     {

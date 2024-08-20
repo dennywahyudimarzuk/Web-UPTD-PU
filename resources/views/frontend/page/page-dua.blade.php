@@ -11,6 +11,7 @@
             {{ $data->page->title ?? '' }}
         </h6>
     </div>
+    
     @if ($data->page->title == 'Struktur Organisasi')
         <div class="blog-items p-0" data-aos="fade-up" data-aos-delay="200">
             <div class="blog-details-content">
@@ -26,6 +27,65 @@
                 </div>
             </div>
         </div>
+    @elseif ($data->page->title == 'Tugas Pokok dan Fungsi')
+        <div class="blog-items p-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="blog-details-content">
+                <div type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <img src="{{ asset('frontend') . '/' . '1.png' }}" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="blog-items p-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="blog-details-content">
+                <div type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    <img src="{{ asset('frontend') . '/' . '2.png' }}" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="blog-items p-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="blog-details-content">
+                <div type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                    <img src="{{ asset('frontend') . '/' . '3.png' }}" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="blog-items p-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="blog-details-content">
+                <div type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                    <img src="{{ asset('frontend') . '/' . '4.png' }}" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content p-3">
+                    <img src="{{ asset('frontend') . '/' . '1.png' }}" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content p-3">
+                    <img src="{{ asset('frontend') . '/' . '2.png' }}" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content p-3">
+                    <img src="{{ asset('frontend') . '/' . '3.png' }}" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content p-3">
+                    <img src="{{ asset('frontend') . '/' . '4.png' }}" alt="">
+                </div>
+            </div>
+        </div>
+
     @else
         <div class="blog-items p-0" data-aos="fade-up" data-aos-delay="200">
             <div class="blog-details-content">

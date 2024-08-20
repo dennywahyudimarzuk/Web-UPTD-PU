@@ -180,7 +180,7 @@ a:focus {
 
 a:hover {
   text-decoration: none;
-  color: #4FC0E8;
+  color: #203469;
 }
 
 ul, ol {
@@ -414,7 +414,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   content: '';
   width: 4px;
   height: 80%;
-  background-color: #4FC0E8;
+  background-color: #203469;
   top: 50%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -488,7 +488,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .page-pagination .pagination li a.active, .page-pagination .pagination li a:hover {
-  background-color: #4FC0E8;
+  background-color: #203469;
   color: #ffffff;
 }
 
@@ -510,7 +510,7 @@ label {
 /*Input Field & Select*/
 input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not([type="file"]),
 textarea {
-  /* border: 1px solid #4FC0E8; */
+  /* border: 1px solid #203469; */
   -webkit-box-shadow: none;
           box-shadow: none;
   color: #222222;
@@ -814,7 +814,7 @@ select {
 }
 
 .btn2:hover {
-  color: #4FC0E8;
+  color: #203469;
   background-color: #ffffff;
 }
 
@@ -906,17 +906,17 @@ select {
 }
 
 .btn-custom-01 {
-  background-color: #4FC0E8;
-  border-color: #4FC0E8;
-  border-bottom: 2px solid #001248;
+  background-color: #203469;
+  border-color: #203469;
+  border-bottom: 2px solid #fbc005;
   color: #ffffff;
 }
 
 .btn-custom-01:focus, .btn-custom-01:active, .btn-custom-01:hover {
-  background-color: #001248;
-  border-color: #001248;
-  border-bottom-color: #001248;
-  color: #ffffff;
+  background-color: #fbc005;
+  border-color: #fbc005;
+  border-bottom-color: #fbc005;
+  color: #203469;
 }
 
 .btn-custom-02 {
@@ -934,15 +934,15 @@ select {
 }
 
 .btn-primary {
-  background-color: #4FC0E8;
-  border-color: #4FC0E8;
+  background-color: #203469;
+  border-color: #203469;
   color: #ffffff;
 }
 
 .btn-primary:focus, .btn-primary:active, .btn-primary:hover {
   background-color: #ffffff;
-  border-color: #4FC0E8;
-  color: #4FC0E8;
+  border-color: #203469;
+  color: #203469;
 }
 
 .btn-secondary {
@@ -2379,12 +2379,12 @@ select {
 
 .primary-menu ul li {
   position: relative;
-  padding: 30px 22px;
+  padding: 30px 15px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .primary-menu ul li {
-    padding: 30px 17px;
+    padding: 30px 10px;
   }
 }
 
@@ -2392,13 +2392,13 @@ select {
   font-size: 18px;
   font-weight: 700;
   font-family: "Rajdhani", sans-serif;
-  color: #00000080;
+  color: #203469;
   position: relative;
   display: block;
 }
 
 .primary-menu ul li a:hover {
-  color: #001248;
+  color: #fbc005;
 }
 
 .primary-menu ul li a::before {
@@ -2406,7 +2406,7 @@ select {
   content: '';
   width: 0;
   height: 1px;
-  background-color: #4FC0E8;
+  background-color: #fbc005;
   left: 0;
   bottom: 0;
   -webkit-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -2451,7 +2451,7 @@ select {
   background-color: #ffffff;
   -webkit-box-shadow: 2px 2px 20px rgba(52, 58, 64, 0.1);
           box-shadow: 2px 2px 20px rgba(52, 58, 64, 0.1);
-  border-top: 2px solid #4FC0E8;
+  border-top: 2px solid #203469;
   padding: 10px 0;
   z-index: 9;
   opacity: 0;
@@ -3047,25 +3047,25 @@ select {
 
 @media only screen and (max-width: 575px){
   .slider-section {
-    margin-top: 56px;
+    margin-top: 48px;
   }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 990px){
   .slider-section {
-    margin-top: 103px;
+    margin-top: 84px;
   }
 }
 
 @media only screen and (min-width: 991px) and (max-width: 1199px){
   .slider-section {
-    margin-top: 129px;
+    margin-top: 126px;
   }
 }
 
 @media only screen and (min-width: 1200px){
   .slider-section {
-    margin-top: 129px;
+    margin-top: 126px;
   }
 }
 
@@ -4095,14 +4095,14 @@ select {
 
 .single-blog .blog-content .meta li {
   font-size: 17px;
-  color: #4FC0E8;
+  color: #203469;
   margin-right: 15px;
   position: relative;
 }
 
 .single-blog .blog-content .meta li::before {
   content: '|';
-  color: #4FC0E8;
+  color: #203469;
   margin-right: 2px;
 }
 
@@ -4131,13 +4131,13 @@ select {
 }
 
 .single-blog .blog-content .title a:hover {
-  color: #4FC0E8;
+  color: #203469;
 }
 
 .single-blog .blog-content .more {
   font-size: 16px;
   font-weight: 500;
-  color: #4FC0E8;
+  color: #203469;
   margin-top: 10px;
 }
 
@@ -5843,7 +5843,7 @@ select {
 
 .blog-details-content .meta li {
   font-size: 16px;
-  color: #4FC0E8;;
+  color: #203469;;
   margin-right: 10px;
   position: relative;
 }
@@ -6081,7 +6081,7 @@ select {
   background-color: #C7F4DB;
   border-radius: 50%;
   text-align: center;
-  color: #4FC0E8;
+  color: #203469;
   font-size: 16px;
   border: 0;
 }
@@ -8140,7 +8140,7 @@ select {
 
 .footer-copyright-section {
   /* background-color: #0b3fb3; */
-  background-color: #4FC0E8;
+  background-color: #203469;
   padding-bottom: 15px;
 }
 

@@ -1,14 +1,14 @@
 <div class="p-4 bg-white rounded mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200"
     style="box-shadow: 0 4px 12px 0 rgb(111 111 111 / 15%)">
     <h4 class="pb-2"
-        style="letter-spacing: 0px; text-transform: initial; font-weight: 700; font-size: 18px; border-bottom: 1.5px solid #4FC0E8;">
-        <span style="color: #4FC0E8">Kegiatan </span>Disdukcapil Sumsel
+        style="letter-spacing: 0px; text-transform: initial; font-weight: 700; font-size: 18px; border-bottom: 1.5px solid #203469;">
+        <span style="color: #fbc005">Kegiatan </span>UPTD LABBK Sumsel
     </h4>
-    @foreach ($berita_disdukcapil as $item)
+    @foreach ($berita_uptdlabbk as $item)
         <div class="single-blog mt-3 row" data-aos="fade-up" data-aos-delay="400">
             {{-- @foreach ($item->gambar as $newsimage) --}}
             <div class="blog-image rounded-4 col-4">
-                <a href="{{ route('beritadetail', ['pg' => 'berita-disdukcapil', 'slug' => $item->slug]) }}">
+                <a href="{{ route('beritadetail', ['pg' => 'berita-uptdlabbk', 'slug' => $item->slug]) }}">
                     <div
                         style="height: 70px;
                                     background-size: cover;
@@ -26,7 +26,7 @@
                     </li>
                 </ul>
                 <h3 class="title d-flex align-items-center">
-                    <a href="{{ route('beritadetail', ['pg' => 'berita-disdukcapil', 'slug' => $item->slug]) }}"
+                    <a href="{{ route('beritadetail', ['pg' => 'berita-uptdlabbk', 'slug' => $item->slug]) }}"
                         style="font-size: 14px">{{ $item->title }}</a>
                 </h3>
             </div>
@@ -36,8 +36,8 @@
 <div class="p-4 bg-white rounded mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200"
     style="box-shadow: 0 4px 12px 0 rgb(111 111 111 / 15%)">
     <h4 class="pb-2"
-        style="letter-spacing: 0px; text-transform: initial; font-weight: 700; font-size: 18px; border-bottom: 1.5px solid #4FC0E8;">
-        <span style="color: #4FC0E8">Berita </span>Sumsel
+        style="letter-spacing: 0px; text-transform: initial; font-weight: 700; font-size: 18px; border-bottom: 1.5px solid #203469;">
+        <span style="color: #fbc005">Berita </span>Sumsel
     </h4>
     @if (count($berita3) > 0)
         @foreach ($berita3 as $item)
@@ -71,8 +71,8 @@
 <div class="p-4 bg-white rounded mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200"
     style="box-shadow: 0 4px 12px 0 rgb(111 111 111 / 15%)">
     <h4 class="pb-2"
-        style="letter-spacing: 0px; text-transform: initial; font-weight: 700; font-size: 18px; border-bottom: 1.5px solid #4FC0E8;">
-        <span style="color: #4FC0E8">Sosial Media </span>Disdukcapil Sumsel
+        style="letter-spacing: 0px; text-transform: initial; font-weight: 700; font-size: 18px; border-bottom: 1.5px solid #203469;">
+        <span style="color: #203469">Sosial Media </span>UPTD LABBK Sumsel
     </h4>
     <ul>
         @foreach ($social_media as $item)

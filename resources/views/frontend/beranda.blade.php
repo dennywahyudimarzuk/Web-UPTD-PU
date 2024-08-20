@@ -49,9 +49,6 @@
                         <img src="{{ asset('storage/banners/' . $item->image) }}" alt="" style="width: 100%">
                     </div>
                 @endforeach
-                {{-- <div class="carousel-item single-slider p-0 active" style="height: 100%">
-                    <img src="{{ asset('frontend/banner1.jpeg')}}" alt="" style="height: 100%">
-                </div> --}}
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1"
                 data-bs-slide="prev">
@@ -72,21 +69,21 @@
             <div class="row">
                 <div class="section-title col" data-aos="fade-right" data-aos-delay="200">
                     <h5 class="sub-title" style="letter-spacing: 0px; text-transform: initial; font-weight: 600">Kegiatan
-                        <span style="color: #4FC0E8;">Disdukcapil Sumsel<span>
+                        <span style="color: #fbc005;">UPTD LABBK Sumsel<span>
                     </h5>
                 </div>
                 <div class="blog-btn text-end col" data-aos="fade-left" data-aos-delay="200">
-                    <a href="berita/berita-disdukcapil" class="btn-custom-01 px-2 rounded">Lainnya</a>
+                    <a href="berita/berita-uptdlabbk" class="btn-custom-01 px-2 rounded">Lainnya</a>
                 </div>
             </div>
             <div class="blog-items row">
-                @foreach ($berita_disdukcapil3 as $item)
+                @foreach ($berita_uptdlabbk3 as $item)
                     <div class="col-lg-4 col-md-6">
                         <div class="single-blog" data-aos="fade-up" data-aos-delay="200">
                             {{-- @foreach ($item->gambar as $newsimage) --}}
                             <div class="blog-image">
-                                {{-- <a href="/berita-disdukcapil/detail/{{ Str::slug($item->title) }}" --}}
-                                <a href="{{ route('beritadetail', ['pg' => 'berita-disdukcapil', 'slug' => $item->slug]) }}"
+                                {{-- <a href="/berita-uptdlabbk/detail/{{ Str::slug($item->title) }}" --}}
+                                <a href="{{ route('beritadetail', ['pg' => 'berita-uptdlabbk', 'slug' => $item->slug]) }}"
                                     style=" height: 300px;
                                                 background-size: cover;
                                                 background-repeat: no-repeat;
@@ -104,8 +101,7 @@
                                     </li>
                                     <li> <i class="fa fa-user"></i> Admin</li>
                                 </ul>
-                                <h3 class="title"><a
-                                        href="{{ route('beritadetail', ['pg' => 'berita-disdukcapil', 'slug' => $item->slug]) }}">{{ $item->title }}</a>
+                                <h3 class="title"><a href="{{ route('beritadetail', ['pg' => 'berita-uptdlabbk', 'slug' => $item->slug]) }}">{{ $item->title }}</a>
                             </div>
                         </div>
                     </div>
@@ -115,7 +111,7 @@
     </div>
 
     <div class="section py-3"
-        style="background: linear-gradient(to right,#4FC0E8 0%, #4FC0E8 20%, #001248 40%, #001248 0%)">
+        style="background: linear-gradient(to right,#fbc005 0%, #fbc005 20%, #203469 40%, #203469 0%)">
         <div class="container">
             <div class="row ">
                 <div class="col-lg-6 d-flex align-items-center justify-content-center" data-aos="fade-right"
@@ -140,7 +136,7 @@
             <div class="blog-wrapper px-2">
                 <div class="section-title text-center" data-aos="fade-up" data-aos-delay="200">
                     <h5 class="sub-title" style="letter-spacing: 0px; text-transform: initial; font-weight: 600">Galeri
-                        <span style="color: #4FC0E8;">Foto<span>
+                        <span style="color: #fbc005;">Foto<span>
                     </h5>
                 </div>
                 <div class="blog-items">
@@ -183,7 +179,7 @@
             <div class="row">
                 <div class="section-title col" data-aos="fade-right" data-aos-delay="200">
                     <h5 class="sub-title" style="letter-spacing: 0px; text-transform: initial; font-weight: 600">Berita
-                        <span style="color: #4FC0E8;">Sumsel<span>
+                        <span style="color: #fbc005;">Sumsel<span>
                     </h5>
                 </div>
                 <div class="blog-btn text-end col" data-aos="fade-left" data-aos-delay="200">
@@ -230,7 +226,7 @@
                 <div class="section-title" data-aos="fade-up" data-aos-delay="200">
                     <h5 class="sub-title" style="letter-spacing: 0px; text-transform: initial; font-weight: 600">Temukan
                         Kami di
-                        <span style="color: #4FC0E8;">Media Sosial<span>
+                        <span style="color: #fbc005;">Media Sosial<span>
                     </h5>
                 </div>
                 <div class="blog-items mt-4">

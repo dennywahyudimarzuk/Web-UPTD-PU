@@ -15,23 +15,23 @@ class SocialMediaSeeder extends Seeder
     public function run()
     {
         SocialMedia::create([
-            'name' => 'Disdukcapil Sumsel',
+            'name' => 'UPTD LABBK Sumsel',
             'name_brands' => 'Facebook',
-            'url' => 'https://www.facebook.com/pages/Dinas-Kependudukan-dan-Pencatatan-Sipil-prov-Sumsel/212542689444746',
+            'url' => '',
             'icon' => 'fa-brands fa-facebook-f',
             'background' => '#36528C',
         ]);
         SocialMedia::create([
-            'name' => 'Disdukcapil Sumsel',
+            'name' => 'UPTD LABBK Sumsel',
             'name_brands' => 'Instagram',
-            'url' => 'https://www.instagram.com/disdukcapilprovsumsel/',
+            'url' => '',
             'icon' => 'fa-brands fa-instagram',
             'background' => '#C13282',
         ]);
         SocialMedia::create([
-            'name' => 'Disdukcapil Sumsel',
+            'name' => 'UPTD LABBK Sumsel',
             'name_brands' => 'Youtube',
-            'url' => 'https://www.youtube.com/@disdukcapilsumsel',
+            'url' => '',
             'icon' => 'fa-brands fa-youtube',
             'background' => '#DE4B39',
         ]);

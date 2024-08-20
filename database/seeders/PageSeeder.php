@@ -16,8 +16,8 @@ class PageSeeder extends Seeder
     public function run()
     {
         Page::create([
-            'title' => 'Sejarah',
-            'content' => 'Sejarah',
+            'title' => 'Tugas Pokok dan Fungsi',
+            'content' => 'tugaspokok-dan-fungsi',
             'template' => 'page-satu',
             'user_id' => 1
         ]);
